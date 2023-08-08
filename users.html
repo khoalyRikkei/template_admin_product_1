@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name
+      btn--info="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Admin</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/users.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <header id="header-page"></header>
+      <main>
+        <section class="card">
+          <div class="card-title">
+            <h3>list of users</h3>
+          </div>
+
+          <div class="card-content">
+            <div class="search-bar">
+              <input type="text" placeholder="Search by name" />
+              <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <table class="list-info">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Username</th>
+                  <th>Email</th>
+                  <th>Full name</th>
+                  <th>Address</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>user_01</td>
+                  <td>nguyenvana@gmail.com</td>
+                  <td>Nguyễn Văn A</td>
+                  <td>Đà Nẵng</td>
+                  <td>Active</td>
+                  <td>
+                    <button class="btn btn--info">View</button>
+                    <button class="btn btn--danger">Block</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>user_02</td>
+                  <td>nguyenvana@gmail.com</td>
+                  <td>Nguyễn Văn B</td>
+                  <td>Đà Nẵng</td>
+                  <td>Active</td>
+                  <td>
+                    <button class="btn btn--info">View</button>
+                    <button class="btn btn--danger">Block</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>user_03</td>
+                  <td>nguyenvana@gmail.com</td>
+                  <td>Nguyễn Văn C</td>
+                  <td>Đà Nẵng</td>
+                  <td>Active</td>
+                  <td>
+                    <button class="btn btn--info">View</button>
+                    <button class="btn btn--danger">Block</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-title">
+            <h3>List of admin</h3>
+            <button class="btn btn--primary">Add new admin</button>
+          </div>
+          <div class="card-content">
+            <div class="search-bar">
+              <input type="text" placeholder="Search by name" />
+              <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <table class="list-info">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Username</th>
+                  <th>Email</th>
+                  <th>Full name</th>
+                  <th>Role</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>user_01</td>
+                  <td>nguyenvana@gmail.com</td>
+                  <td>Nguyễn Văn A</td>
+                  <td>Admin</td>
+                  <td>
+                    <button class="btn btn--info">View</button>
+                    <button class="btn btn--primary">Edit</button>
+                    <button class="btn btn--danger">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>user_02</td>
+                  <td>nguyenvana@gmail.com</td>
+                  <td>Nguyễn Văn B</td>
+                  <td>Editor</td>
+                  <td>
+                    <button class="btn btn--info">View</button>
+                    <button class="btn btn--primary">Edit</button>
+
+                    <button class="btn btn--danger">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>user_03</td>
+                  <td>nguyenvana@gmail.com</td>
+                  <td>Nguyễn Văn C</td>
+                  <td>Member</td>
+                  <td>
+                    <button class="btn btn--info">View</button>
+                    <button class="btn btn--primary">Edit</button>
+                    <button class="btn btn--danger">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <table id="user-table"></table>
+      </main>
+    </div>
+  </body>
+
+  <!-- js method -->
+  <script src="./utils/method.js"></script>
+  <!-- js db -->
+  <script src="/utils/database.js"></script>
+  <!-- js route -->
+  <script src="./routes/index.js"></script>
+
+  <!-- js header -->
+  <script src="./components/header.js"></script>
+  <!-- js table -->
+  <script src="/components/table.js"></script>
+
+  <!-- User js -->
+  <script src="./js/users.js"></script>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="layout">
+      <header id="header-page"></header>
+      <main>
+        <section class="card">
+          <div class="card-title">
+            <h3>Reviews management</h3>
+
+            <div class="sort">
+              Filter:
+              <select name="" id="">
+                <option>1 start</option>
+                <option>2 start</option>
+                <option>3 start</option>
+                <option>4 start</option>
+                <option>5 start</option>
+              </select>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="search-bar">
+              <input type="text" placeholder="Search by name" />
+              <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <table class="list-info">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Review ID</th>
+                  <th>Date</th>
+                  <th>user review</th>
+                  <th>start</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>RV__001</td>
+                  <td>12/12/2022</td>
+                  <td>user_001</td>
+                  <td>4</td>
+                  <td>approved</td>
+                  <td>
+                    <button class="btn btn--info">View</button>
+                    <button class="btn btn--primary">Edit</button>
+                    <button class="btn btn--danger">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>RV__002</td>
+                  <td>12/12/2022</td>
+                  <td>user_001</td>
+                  <td>4</td>
+                  <td>approved</td>
+                  <td>
+                    <button class="btn btn--info">View</button>
+                    <button class="btn btn--primary">Edit</button>
+                    <button class="btn btn--danger">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>RV__003</td>
+                  <td>12/12/2022</td>
+                  <td>user_001</td>
+                  <td>4</td>
+                  <td>approved</td>
+                  <td>
+                    <button class="btn btn--info">View</button>
+                    <button class="btn btn--primary">Edit</button>
+                    <button class="btn btn--danger">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="./utils/method.js"></script>
+  <script src="./routes/index.js"></script>
+  <script src="./components/header.js"></script>
+</html>

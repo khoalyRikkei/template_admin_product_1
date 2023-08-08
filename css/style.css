@@ -1,0 +1,288 @@
+:root {
+  --color-bg-primary: #f0f4f7;
+  --color-bg-second: #a3d8d8;
+  --color-violet: rgb(67, 11, 171);
+
+  --color-primary: rgb(0, 128, 255);
+  --color-danger: rgb(235, 71, 38);
+  --color-info: rgb(81, 188, 210);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  min-width: 100vh;
+  background-color: var(--color-bg-primary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.layout main {
+  padding: 50px;
+}
+
+/* General CSS */
+.round {
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px grey;
+}
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border-bottom: 1px solid rgb(196, 194, 194);
+  box-shadow: 2px 2px 3px rgb(196, 194, 194);
+}
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.card-title a {
+  color: blue;
+}
+.card-title h3 {
+  color: rgb(59, 59, 60);
+  text-transform: capitalize;
+}
+.card-content {
+  display: inline-block;
+}
+
+/* btn */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+}
+
+.btn--info {
+  background-color: var(--color-info);
+}
+
+.btn--accent {
+}
+
+.btn--danger {
+  background-color: var(--color-danger);
+}
+
+/* Layout */
+.layout-2-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.layout-2-column > * {
+  min-width: 300px;
+}
+.avatar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border-bottom: 2px solid grey;
+}
+.avatar img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+/* header */
+#header-page {
+  background-color: #fff;
+  height: 100vh;
+  border-right: 1px solid rgb(196, 194, 194);
+  box-shadow: 0px 2px 3px rgb(196, 194, 194);
+}
+#header-page .active {
+  background-color: var(--color-bg-second);
+  color: rgb(235, 235, 235);
+}
+
+/* nav */
+.navbar-main ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 40px 10px;
+  list-style-type: none;
+  min-width: 200px;
+}
+.navbar-main ul li {
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.navbar-main ul li a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-self: start;
+  color: var(--color-violet);
+}
+.navbar-main ul li:hover {
+  background-color: var(--color-bg-primary);
+}
+.navbar-main ul li i {
+  font-size: 20px;
+}
+
+/* order */
+#order .card-content {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+#order .card {
+  border: 1px solid grey;
+  border-right: 5px solid red;
+}
+
+/* revenue */
+
+#revenue .card-content {
+  width: 100%;
+}
+
+/* component */
+.line-revenue {
+  height: 30px;
+  width: 100%;
+  background-color: rgb(255, 21, 0);
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.line-revenue span {
+  position: relative;
+  padding: 10px;
+}
+.line-revenue span:first-child {
+  background-color: green;
+  display: inline-block;
+  height: 100%;
+  width: 85%;
+  display: flex;
+  align-items: center;
+}
+.line-revenue span:last-child::after {
+  content: "million dong";
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  white-space: nowrap;
+}
+.line-revenue span:first-child::before {
+  content: "Current revenue ";
+  position: absolute;
+  bottom: -40px;
+  left: 0px;
+}
+.line-revenue span:last-child::before {
+  content: "Upcoming revenue";
+  position: absolute;
+  bottom: -30px;
+  right: 0px;
+  white-space: nowrap;
+}
+/* Banner */
+#banner .card-content ul {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+}
+
+/* Table  general*/
+table {
+  border-radius: 8px;
+  overflow: hidden;
+  table-layout: fixed;
+}
+table,
+tr,
+td,
+th {
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+th {
+  text-transform: capitalize;
+}
+td,
+th {
+  padding: 15px 30px;
+  text-align: center;
+}
+table tr {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.342);
+}
+table thead tr {
+  background-color: rgb(34, 46, 156);
+
+  color: white;
+}
+table tr:nth-child(even) {
+  background-color: rgba(107, 188, 235, 0.269);
+}
+table tbody tr:nth-child(odd) {
+  background-color: rgba(238, 242, 244, 0.443);
+}
+
+/* Search bar */
+
+.search-bar {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 0.5px solid rgba(128, 128, 128, 0.342);
+}
+.search-bar input {
+  flex: 9;
+  border: none;
+  padding: 0 10px;
+  font-size: 1.1em;
+}
+
+.search-bar input:focus-visible {
+  outline: none;
+}
+.search-bar .icon {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--color-primary);
+  flex: 1;
+  cursor: pointer;
+}

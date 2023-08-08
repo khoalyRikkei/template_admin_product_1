@@ -1,0 +1,45 @@
+.chart table,
+.chart tr,
+.chart td {
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.chart table {
+  width: 85%;
+  margin: 20px 0 20px 50px;
+  table-layout: fixed !important;
+  border: none;
+}
+.chart td {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+}
+.chart td .x {
+  position: absolute;
+  bottom: -10px;
+  left: -30px;
+  text-align: right;
+  display: block;
+  width: 20px;
+}
+.chart td .col {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 40%;
+  left: 30%;
+  border-radius: 2px 2px 0 0;
+}
+.chart td .title {
+  position: absolute;
+  bottom: -25px;
+  text-align: center;
+}
+.chart td:last-child {
+  border: none;
+}
+.chart table {
+  overflow: visible !important;
+}

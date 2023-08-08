@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/chart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="layout">
+      <header id="header-page"></header>
+      <main class="layout-2-column">
+        <section class="card" id="users">
+          <div class="card-title">
+            <h3>Statistics of users</h3>
+            <a href="/users.html">See details</a>
+          </div>
+
+          <div class="content">
+            <div class="chart" id="chart-user"></div>
+          </div>
+        </section>
+
+        <section class="card" id="order">
+          <div class="card-title">
+            <h3>Statistics of order</h3>
+            <a href="/orders.html">See details</a>
+          </div>
+
+          <div class="card-content">
+            <div class="card">Order placed: 20 order</div>
+            <div class="card">Preparing to ship: 30 orders</div>
+            <div class="card">In transit: 10 orders</div>
+            <div class="card">Delivered: 500 orders</div>
+            <div class="card">Cancelled: 5 orders</div>
+          </div>
+        </section>
+        <section class="card" id="revenue">
+          <div class="card-title">
+            <h3>Revenue management</h3>
+            <div>
+              <select name="" id="">
+                <option value="">January</option>
+                <option value="">February</option>
+                <option value="">March</option>
+              </select>
+              <select name="" id="">
+                <option value="">2022</option>
+                <option value="">2023</option>
+              </select>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="line-revenue"><span>575,5 </span><span>32,4</span></div>
+          </div>
+        </section>
+        <section class="card" id="banner">
+          <div class="card-title">
+            <h3>Banners management</h3>
+            <a href="/banners.html">See details</a>
+          </div>
+
+          <div class="card-content">
+            <p>Choose the banner to show</p>
+            <ul>
+              <li>
+                Banner 1:
+                <select name="" id="">
+                  <option value="">Promotion A</option>
+                  <option value="">Promotion B</option>
+                  <option value="">Promotion C</option>
+                  <option value="">Promotion D</option>
+                </select>
+              </li>
+              <li>
+                Banner 2:
+                <select name="" id="">
+                  <option value="">Promotion A</option>
+                  <option value="">Promotion B</option>
+                  <option value="">Promotion C</option>
+                  <option value="">Promotion D</option>
+                </select>
+              </li>
+              <li>
+                Banner 3:
+                <select name="" id="">
+                  <option value="">Promotion A</option>
+                  <option value="">Promotion B</option>
+                  <option value="">Promotion C</option>
+                  <option value="">Promotion D</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="./utils/method.js"></script>
+  <script src="./routes/index.js"></script>
+  <script src="./components/header.js"></script>
+</html>
